@@ -92,6 +92,9 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gq-so-qJa"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VdL-0Y-icf">
                                         <rect key="frame" x="269.5" y="0.0" width="124.5" height="42.5"/>
@@ -194,6 +197,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="IV3-ch-ote" id="tiS-dT-TVz"/>
+                        <outlet property="mainImageView" destination="JKH-K2-MM1" id="EAb-ej-DqD"/>
                         <outlet property="playButton" destination="CAu-bb-N06" id="Rm4-6U-2KO"/>
                     </connections>
                 </viewController>
