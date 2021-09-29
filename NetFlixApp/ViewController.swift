@@ -9,11 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  // MARK: Properties
+  var imageIndex: Int = 0
+  
   var previewImageList: [String] = ["poster1", "poster2", "poster3", "poster4", "poster5", "poster6", "poster7", "poster8", "poster9"]
   let mainImageList: [String] = ["7번방의선물", "겨울왕국2", "광해", "괴물", "국제시장", "극한직업", "도둑들", "명량", "베테랑", "부산행", "신과함께인과연", "신과함께죄와벌", "아바타", "알라딘", "암살", "어벤져스엔드게임", "왕의남자", "태극기휘날리며", "택시운전사", "해운대"]
   
-  var imageIndex: Int = 0
-  
+  // MARK: IBOutlets
   @IBOutlet weak var mainImageView: UIImageView!
   @IBOutlet weak var playButton: UIButton!
   @IBOutlet weak var collectionView: UICollectionView!
