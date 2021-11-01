@@ -65,9 +65,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "previewCell", for: indexPath) as! PreViewCell
-    cell.layer.cornerRadius = cell.frame.height / 2
-    cell.layer.borderWidth = 3
-    cell.layer.borderColor = UIColor.darkGray.cgColor
+//    cell.layer.cornerRadius = cell.frame.height / 2
+//    cell.layer.borderWidth = 3
+//    cell.layer.borderColor = UIColor.darkGray.cgColor
+
     cell.previewImage.image = UIImage(named: previewImageList[indexPath.row])
     return cell
   }
